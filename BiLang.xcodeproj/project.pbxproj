@@ -14,6 +14,13 @@
 		FFD8644D1E166F060029E35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD8644B1E166F060029E35B /* LaunchScreen.storyboard */; };
 		FFD864581E166F060029E35B /* BiLangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD864571E166F060029E35B /* BiLangTests.swift */; };
 		FFD864631E166F060029E35B /* BiLangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD864621E166F060029E35B /* BiLangUITests.swift */; };
+		FFD864791E1679610029E35B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864711E16771A0029E35B /* RxSwift.framework */; };
+		FFD8647D1E1679610029E35B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864731E16771A0029E35B /* RxCocoa.framework */; };
+		FFD864831E167C5E0029E35B /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864711E16771A0029E35B /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD864851E167C5E0029E35B /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864731E16771A0029E35B /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD864871E1680B60029E35B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FFD864861E1680B60029E35B /* Cartfile */; };
+		FFD864C31E16A1D30029E35B /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864C21E16A1D30029E35B /* RxKeyboard.framework */; };
+		FFD864C41E16A1D30029E35B /* RxKeyboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864C21E16A1D30029E35B /* RxKeyboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FFD864811E1679610029E35B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFD864851E167C5E0029E35B /* RxCocoa.framework in Embed Frameworks */,
+				FFD864C41E16A1D30029E35B /* RxKeyboard.framework in Embed Frameworks */,
+				FFD864831E167C5E0029E35B /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FFD8643F1E166F060029E35B /* BiLang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD864421E166F060029E35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +70,13 @@
 		FFD8645E1E166F060029E35B /* BiLangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiLangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD864621E166F060029E35B /* BiLangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiLangUITests.swift; sourceTree = "<group>"; };
 		FFD864641E166F060029E35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD864711E16771A0029E35B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FFD864721E16771A0029E35B /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		FFD864731E16771A0029E35B /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FFD864741E16771A0029E35B /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		FFD864861E1680B60029E35B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FFD864C21E16A1D30029E35B /* RxKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKeyboard.framework; path = Carthage/Build/iOS/RxKeyboard.framework; sourceTree = "<group>"; };
+		FFE619A81E1932BA00409B1A /* BiLang.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BiLang.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD864791E1679610029E35B /* RxSwift.framework in Frameworks */,
+				FFD864C31E16A1D30029E35B /* RxKeyboard.framework in Frameworks */,
+				FFD8647D1E1679610029E35B /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +110,13 @@
 		FFD864361E166F050029E35B = {
 			isa = PBXGroup;
 			children = (
+				FFE619A81E1932BA00409B1A /* BiLang.playground */,
+				FFD864861E1680B60029E35B /* Cartfile */,
 				FFD864411E166F060029E35B /* BiLang */,
 				FFD864561E166F060029E35B /* BiLangTests */,
 				FFD864611E166F060029E35B /* BiLangUITests */,
 				FFD864401E166F060029E35B /* Products */,
+				FFD864701E16771A0029E35B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +161,18 @@
 			path = BiLangUITests;
 			sourceTree = "<group>";
 		};
+		FFD864701E16771A0029E35B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD864C21E16A1D30029E35B /* RxKeyboard.framework */,
+				FFD864711E16771A0029E35B /* RxSwift.framework */,
+				FFD864721E16771A0029E35B /* RxTest.framework */,
+				FFD864731E16771A0029E35B /* RxCocoa.framework */,
+				FFD864741E16771A0029E35B /* RxBlocking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +183,7 @@
 				FFD8643B1E166F050029E35B /* Sources */,
 				FFD8643C1E166F050029E35B /* Frameworks */,
 				FFD8643D1E166F050029E35B /* Resources */,
+				FFD864811E1679610029E35B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +286,7 @@
 			files = (
 				FFD8644D1E166F060029E35B /* LaunchScreen.storyboard in Resources */,
 				FFD8644A1E166F060029E35B /* Assets.xcassets in Resources */,
+				FFD864871E1680B60029E35B /* Cartfile in Resources */,
 				FFD864481E166F060029E35B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,8 +464,14 @@
 		FFD864681E166F060029E35B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HY47J4787Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = BiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
@@ -427,8 +483,14 @@
 		FFD864691E166F060029E35B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HY47J4787Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = BiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
@@ -514,6 +576,7 @@
 				FFD864691E166F060029E35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFD8646A1E166F060029E35B /* Build configuration list for PBXNativeTarget "BiLangTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +585,7 @@
 				FFD8646C1E166F060029E35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFD8646D1E166F060029E35B /* Build configuration list for PBXNativeTarget "BiLangUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +594,7 @@
 				FFD8646F1E166F060029E35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

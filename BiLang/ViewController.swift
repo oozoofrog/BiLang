@@ -26,7 +26,7 @@ extension UIBarButtonItem {
 class TextUtil {
     static func radixed(source: String, radix: RadixType, seperator: String = " ", defaultPrefix: String = "0") -> (String, Data) {
         guard let data = source.data(using: .utf8) else {
-            return ("00000000", Data.init(count: 8))
+            return ("", Data.init(count: 8))
         }
         return radixed(source: data, radix: radix, seperator: seperator, defaultPrefix: defaultPrefix)
     }
@@ -54,10 +54,10 @@ class TextUtil {
         }
         return source.components(separatedBy: seperator).reduce(Data(), { (result, radixedString) -> Data in
             let value = hexFromSource(radixedString)
-            guard Int(Int8.max) > value else {
+            guard Int(UInt8.max) > value else {
                 return result
             }
-            var ascii: Int8 = Int8(value)
+            var ascii: UInt8 = UInt8(value)
             let buffer: UnsafeRawPointer = withUnsafePointer(to: &ascii){UnsafeRawPointer($0)}
             return result + Data(bytes: buffer, count: 1)
         })
@@ -111,13 +111,15 @@ class ViewController: UIViewController {
         .distinctUntilChanged()
         .observeOn(MainScheduler.instance)
         .subscribe(onNext: { [weak self] (text) in
+            print("source -> \(text)")
             switch self?.showSegment.selectedSegmentIndex {
             case 0?:
                 let (convertedText, data) = TextUtil.radixed(source: text, radix: .binary)
                 self?.destinationTextView.text = convertedText
                 self?.destinationData = data
             case 1?:
-                guard let text = String(data: TextUtil.unradixed(source: text), encoding: .utf8) else {
+                let data = TextUtil.unradixed(source: text)
+                guard let text = String(data: data, encoding: .utf8) else {
                     return
                 }
                 self?.destinationTextView.text = text

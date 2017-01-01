@@ -99,6 +99,9 @@ class ViewController: UIViewController {
         sourceTextView.inputAccessoryView = toolbar
         UITextView.appearance().tintColor = .white
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(destinationTextToClipboard))
+        destinationTextView.addGestureRecognizer(tap)
+        
         showSegment.rx.selectedSegmentIndex
         .distinctUntilChanged()
         .observeOn(MainScheduler.instance)
@@ -143,6 +146,11 @@ class ViewController: UIViewController {
         }
     }
 
+    func destinationTextToClipboard() {
+        UIPasteboard.general.string = destinationTextView.text
+        self.prompt("Copied to Clipboard", autoclosing: 0.25)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

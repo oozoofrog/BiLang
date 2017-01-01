@@ -21,6 +21,8 @@
 		FFD864871E1680B60029E35B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FFD864861E1680B60029E35B /* Cartfile */; };
 		FFD864C31E16A1D30029E35B /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864C21E16A1D30029E35B /* RxKeyboard.framework */; };
 		FFD864C41E16A1D30029E35B /* RxKeyboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD864C21E16A1D30029E35B /* RxKeyboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFE619AA1E195CCB00409B1A /* CuckooAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE619A91E195CCB00409B1A /* CuckooAlert.framework */; };
+		FFE619AB1E195CCB00409B1A /* CuckooAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFE619A91E195CCB00409B1A /* CuckooAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FFD864851E167C5E0029E35B /* RxCocoa.framework in Embed Frameworks */,
+				FFE619AB1E195CCB00409B1A /* CuckooAlert.framework in Embed Frameworks */,
 				FFD864C41E16A1D30029E35B /* RxKeyboard.framework in Embed Frameworks */,
 				FFD864831E167C5E0029E35B /* RxSwift.framework in Embed Frameworks */,
 			);
@@ -77,6 +80,7 @@
 		FFD864861E1680B60029E35B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		FFD864C21E16A1D30029E35B /* RxKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKeyboard.framework; path = Carthage/Build/iOS/RxKeyboard.framework; sourceTree = "<group>"; };
 		FFE619A81E1932BA00409B1A /* BiLang.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BiLang.playground; sourceTree = "<group>"; };
+		FFE619A91E195CCB00409B1A /* CuckooAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CuckooAlert.framework; path = Carthage/Build/iOS/CuckooAlert.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD864791E1679610029E35B /* RxSwift.framework in Frameworks */,
+				FFE619AA1E195CCB00409B1A /* CuckooAlert.framework in Frameworks */,
 				FFD864C31E16A1D30029E35B /* RxKeyboard.framework in Frameworks */,
 				FFD8647D1E1679610029E35B /* RxCocoa.framework in Frameworks */,
 			);
@@ -164,6 +169,7 @@
 		FFD864701E16771A0029E35B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFE619A91E195CCB00409B1A /* CuckooAlert.framework */,
 				FFD864C21E16A1D30029E35B /* RxKeyboard.framework */,
 				FFD864711E16771A0029E35B /* RxSwift.framework */,
 				FFD864721E16771A0029E35B /* RxTest.framework */,

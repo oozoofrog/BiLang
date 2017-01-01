@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LfB-Qg-9Jj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="ZNI-X1-wxp">
+            <objects>
+                <navigationController id="LfB-Qg-9Jj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IXN-uR-4Wi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ck0-KU-AYE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raX-Ua-l3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="116"/>
+        </scene>
+        <!--BiLang-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BiLang" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,43 +33,25 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfO-Kv-2L1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="36"/>
-                                <items>
-                                    <navigationItem title="BiLang" id="TRo-GH-s8p">
-                                        <barButtonItem key="rightBarButtonItem" style="done" id="2xd-Fo-vCc">
-                                            <segmentedControl key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="TtF-lu-Se8">
-                                                <rect key="frame" x="276" y="-1" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <segments>
-                                                    <segment title="변형"/>
-                                                    <segment title="원본"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.75634759664535522" green="0.32720595598220825" blue="0.26008236408233643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-xn-ije">
-                                <rect key="frame" x="8" y="64" width="359" height="595"/>
+                                <rect key="frame" x="8" y="8" width="359" height="651"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hCP-BV-IGD">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="595"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="651"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Zn-Kw-o9E">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="293.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="321.5"/>
                                                 <color key="backgroundColor" red="0.94403740284974091" green="0.40721904564764411" blue="0.32689443570523391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nwa-X2-WHL">
-                                                <rect key="frame" x="0.0" y="301.5" width="359" height="293.5"/>
+                                                <rect key="frame" x="0.0" y="329.5" width="359" height="321.5"/>
                                                 <color key="backgroundColor" red="0.35859391063169493" green="0.66409032703686321" blue="0.84617875647668395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -74,24 +72,35 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Gfv-xn-ije" secondAttribute="trailing" constant="8" id="Eez-lQ-n1E"/>
-                            <constraint firstItem="jfO-Kv-2L1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ucs-4E-VX8"/>
-                            <constraint firstItem="jfO-Kv-2L1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eJJ-t3-fic"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gfv-xn-ije" secondAttribute="bottom" constant="8" id="fAa-vv-keP"/>
-                            <constraint firstItem="Gfv-xn-ije" firstAttribute="top" secondItem="jfO-Kv-2L1" secondAttribute="bottom" constant="8" id="nxZ-wX-lJn"/>
                             <constraint firstItem="Gfv-xn-ije" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ogf-Og-klO"/>
-                            <constraint firstAttribute="trailing" secondItem="jfO-Kv-2L1" secondAttribute="trailing" id="y95-dk-A9u"/>
+                            <constraint firstItem="Gfv-xn-ije" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="y1g-rF-LlF"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="BiLang" id="d8o-Lr-pKc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6Si-DY-kPz">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jlN-IO-XjY">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <color key="tintColor" red="0.75634759664535522" green="0.32720595598220825" blue="0.26008236408233643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bottomMargin" destination="gm1-jH-B3f" id="vmB-yf-auD"/>
                         <outlet property="destinationTextView" destination="0Zn-Kw-o9E" id="3fg-PJ-K5Y"/>
-                        <outlet property="showSegment" destination="TtF-lu-Se8" id="l0C-6v-tiO"/>
+                        <outlet property="showSegment" destination="jlN-IO-XjY" id="MV7-Hn-2VD"/>
                         <outlet property="sourceTextView" destination="Nwa-X2-WHL" id="nM7-18-Prj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="694" y="116"/>
         </scene>
     </scenes>
 </document>

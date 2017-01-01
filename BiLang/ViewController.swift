@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         let toolbar = UIToolbar()
         toolbar.setItems([.flexibleItem, doneItem], animated: false)
         toolbar.sizeToFit()
-        sourceTextView.inputView = toolbar
+        sourceTextView.inputAccessoryView = toolbar
         UITextView.appearance().tintColor = .white
         
         showSegment.rx.selectedSegmentIndex

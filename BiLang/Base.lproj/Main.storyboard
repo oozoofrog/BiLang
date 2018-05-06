@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LfB-Qg-9Jj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LfB-Qg-9Jj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
             <objects>
                 <navigationController id="LfB-Qg-9Jj" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IXN-uR-4Wi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,69 +34,50 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-xn-ije">
-                                <rect key="frame" x="8" y="8" width="359" height="651"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hCP-BV-IGD">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="651"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Zn-Kw-o9E">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="321.5"/>
-                                                <color key="backgroundColor" red="0.94403740284974091" green="0.40721904564764411" blue="0.32689443570523391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nwa-X2-WHL">
-                                                <rect key="frame" x="0.0" y="329.5" width="359" height="321.5"/>
-                                                <color key="backgroundColor" red="0.35859391063169493" green="0.66409032703686321" blue="0.84617875647668395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hCP-BV-IGD" secondAttribute="trailing" id="9jR-yI-Bz5"/>
-                                    <constraint firstItem="hCP-BV-IGD" firstAttribute="leading" secondItem="Gfv-xn-ije" secondAttribute="leading" id="Ndp-pY-xIV"/>
-                                    <constraint firstItem="hCP-BV-IGD" firstAttribute="top" secondItem="Gfv-xn-ije" secondAttribute="top" id="ZBf-P5-c1S"/>
-                                    <constraint firstAttribute="bottom" secondItem="hCP-BV-IGD" secondAttribute="bottom" id="gm1-jH-B3f"/>
-                                </constraints>
-                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-6O-FI5">
+                                <rect key="frame" x="96" y="8" width="183" height="29"/>
+                                <segments>
+                                    <segment title="text"/>
+                                    <segment title="utf8"/>
+                                    <segment title="utf16"/>
+                                    <segment title="bit"/>
+                                </segments>
+                                <color key="tintColor" red="0.75634759659999995" green="0.32720595600000002" blue="0.26008236410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="selectTab:" destination="BYZ-38-t0r" eventType="valueChanged" id="tEP-My-yQw"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-vh-wMn">
+                                <rect key="frame" x="24" y="44" width="327" height="551"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.043518926056338031" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Gfv-xn-ije" secondAttribute="trailing" constant="8" id="Eez-lQ-n1E"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gfv-xn-ije" secondAttribute="bottom" constant="8" id="fAa-vv-keP"/>
-                            <constraint firstItem="Gfv-xn-ije" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ogf-Og-klO"/>
-                            <constraint firstItem="Gfv-xn-ije" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="y1g-rF-LlF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n4Q-vh-wMn" secondAttribute="bottom" constant="8" id="2TN-of-K14"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n4Q-vh-wMn" secondAttribute="trailing" constant="8" id="ONQ-dV-dgH"/>
+                            <constraint firstItem="n4Q-vh-wMn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="QWG-a2-0sZ"/>
+                            <constraint firstItem="Csv-6O-FI5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Rkt-LO-eBN"/>
+                            <constraint firstItem="n4Q-vh-wMn" firstAttribute="top" secondItem="Csv-6O-FI5" secondAttribute="bottom" constant="8" id="cJt-9j-5ZY"/>
+                            <constraint firstItem="Csv-6O-FI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fxr-4y-cz8"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="BiLang" id="d8o-Lr-pKc">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="6Si-DY-kPz">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jlN-IO-XjY">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
-                                <color key="tintColor" red="0.75634759664535522" green="0.32720595598220825" blue="0.26008236408233643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="BiLang" id="d8o-Lr-pKc"/>
                     <connections>
-                        <outlet property="bottomMargin" destination="gm1-jH-B3f" id="vmB-yf-auD"/>
-                        <outlet property="destinationTextView" destination="0Zn-Kw-o9E" id="3fg-PJ-K5Y"/>
-                        <outlet property="showSegment" destination="jlN-IO-XjY" id="MV7-Hn-2VD"/>
-                        <outlet property="sourceTextView" destination="Nwa-X2-WHL" id="nM7-18-Prj"/>
+                        <outlet property="selectedTab" destination="Csv-6O-FI5" id="b6h-CN-gjz"/>
+                        <outlet property="textView" destination="n4Q-vh-wMn" id="9I0-Lq-x85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

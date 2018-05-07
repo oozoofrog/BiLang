@@ -19,7 +19,7 @@ class UnicodeUtilSpec: XCTestCase {
 	}
 	
 	func testUnicodeUtilUTF8() {
-		
+
 	}
 	
 }

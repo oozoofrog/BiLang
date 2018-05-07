@@ -8,7 +8,6 @@ target 'BiLang' do
 		# Pods for BiLang
 		pod 'RxSwift'
 		pod 'RxCocoa'
-		pod 'RxKeyboard'
 		pod 'RxBlocking'
 		
 		target 'BiLangTests' do
@@ -22,6 +21,16 @@ target 'BiLang' do
 		target 'BiLangUITests' do
 				inherit! :search_paths
 				# Pods for testing
+		end
+		
+		target 'Unicode' do
+				inherit! :search_paths
+		end
+		
+		target 'UnicodeTests' do
+				inherit! :search_paths
+				pod 'Quick'
+				pod 'Nimble'
 		end
 		
 end

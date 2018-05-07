@@ -5,9 +5,6 @@ PODS:
     - RxSwift (~> 4.0)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
-  - RxKeyboard (0.8.1):
-    - RxCocoa (>= 4.0.0)
-    - RxSwift (>= 4.0.0)
   - RxSwift (4.1.2)
   - RxTest (4.1.2):
     - RxSwift (~> 4.0)
@@ -17,7 +14,6 @@ DEPENDENCIES:
   - Quick
   - RxBlocking
   - RxCocoa
-  - RxKeyboard
   - RxSwift
   - RxTest
 
@@ -26,10 +22,9 @@ SPEC CHECKSUMS:
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxKeyboard: 28d984440671becc75350b1dfae7ae08d31076df
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
 
-PODFILE CHECKSUM: 83443577186b21a8e9139bb2ea96420853f90e6c
+PODFILE CHECKSUM: 6cf08dd735eb1f34a6dea42f8c9e662d4822ffb0
 
 COCOAPODS: 1.4.0

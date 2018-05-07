@@ -3,12 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05A0EF0B209E95C900C06A90 /* UnicodeUtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */; };
-		05CF542420A08E490079756A /* Pods_BiLang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2751890DAF928594C9D8ED3A /* Pods_BiLang.framework */; };
+		05CF543320A098010079756A /* Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF542A20A098000079756A /* Unicode.framework */; };
+		05CF543A20A098010079756A /* UnicodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF543920A098010079756A /* UnicodeTests.swift */; };
+		05CF543C20A098010079756A /* Unicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CF542C20A098000079756A /* Unicode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CF543F20A098010079756A /* Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF542A20A098000079756A /* Unicode.framework */; };
+		05CF544020A098010079756A /* Unicode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF542A20A098000079756A /* Unicode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05CF544820A09AE70079756A /* Pods_BiLang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF544720A09AE70079756A /* Pods_BiLang.framework */; };
+		05CF544A20A09BFC0079756A /* String+Unicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF544920A09BFC0079756A /* String+Unicode.swift */; };
+		05CF544C20A09D0F0079756A /* Pods_UnicodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF544B20A09D0F0079756A /* Pods_UnicodeTests.framework */; };
+		6FE9CF3177E58677D54664B9 /* Pods_Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5248510B26062637747F51 /* Pods_Unicode.framework */; };
 		9AA9B92F075E98ABDE6FB9AC /* Pods_BiLangTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4497FF0F7FEE62694F4517A /* Pods_BiLangTests.framework */; };
 		B25B815F42CA0053EF016BD4 /* Pods_BiLangUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C37630F95C6F9FB06C68D0F /* Pods_BiLangUITests.framework */; };
 		FFD864431E166F060029E35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD864421E166F060029E35B /* AppDelegate.swift */; };
@@ -20,6 +28,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05CF543420A098010079756A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD864371E166F050029E35B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CF542920A098000079756A;
+			remoteInfo = Unicode;
+		};
+		05CF543620A098010079756A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD864371E166F050029E35B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD8643E1E166F050029E35B;
+			remoteInfo = BiLang;
+		};
+		05CF543D20A098010079756A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD864371E166F050029E35B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CF542920A098000079756A;
+			remoteInfo = Unicode;
+		};
 		FFD864541E166F060029E35B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FFD864371E166F050029E35B /* Project object */;
@@ -43,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				05CF544020A098010079756A /* Unicode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,16 +80,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02CC80F101152A0C3C215DB7 /* Pods-BiLang-UnicodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-UnicodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-UnicodeTests/Pods-BiLang-UnicodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeUtilSpec.swift; sourceTree = "<group>"; };
+		05CF542A20A098000079756A /* Unicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Unicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CF542C20A098000079756A /* Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unicode.h; sourceTree = "<group>"; };
+		05CF542D20A098000079756A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CF543220A098000079756A /* UnicodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CF543920A098010079756A /* UnicodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeTests.swift; sourceTree = "<group>"; };
+		05CF543B20A098010079756A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CF544720A09AE70079756A /* Pods_BiLang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BiLang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CF544920A09BFC0079756A /* String+Unicode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Unicode.swift"; sourceTree = "<group>"; };
+		05CF544B20A09D0F0079756A /* Pods_UnicodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_UnicodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5248510B26062637747F51 /* Pods_Unicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		190581070BF590E1E769B14E /* Pods_UnicodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnicodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7842EEF8FB3F347E774363 /* Pods-UnicodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnicodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C37630F95C6F9FB06C68D0F /* Pods_BiLangUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLangUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2751890DAF928594C9D8ED3A /* Pods_BiLang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0081ACF2289CFBBF8C7557 /* Pods-BiLang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang/Pods-BiLang.debug.xcconfig"; sourceTree = "<group>"; };
+		475F9399A45C1F7049086415 /* Pods-Unicode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unicode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unicode/Pods-Unicode.release.xcconfig"; sourceTree = "<group>"; };
+		58D3AB1DD89D121CE3A1BCE7 /* Pods_BiLang_Unicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLang_Unicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B473619B473F432C3145D44 /* Pods-BiLangUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D225B1A48CFEE693703C887 /* Pods-BiLangTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E05ED22E128C821F17E9C86 /* Pods-BiLangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests.release.xcconfig"; sourceTree = "<group>"; };
+		64716ECF47CB7ED6705C118A /* Pods-BiLang-UnicodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-UnicodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-UnicodeTests/Pods-BiLang-UnicodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		67C65085CBA4E5A03846FC7C /* Pods-BiLang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang/Pods-BiLang.release.xcconfig"; sourceTree = "<group>"; };
 		7FA662BAB7FA5CA7719D6537 /* Pods-BiLangUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8115D8028E6FC75149865709 /* Pods-BiLang-Unicode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-Unicode.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-Unicode/Pods-BiLang-Unicode.release.xcconfig"; sourceTree = "<group>"; };
 		A4497FF0F7FEE62694F4517A /* Pods_BiLangTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLangTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85B5ED180BF26631482687B /* Pods-BiLang-Unicode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-Unicode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-Unicode/Pods-BiLang-Unicode.debug.xcconfig"; sourceTree = "<group>"; };
+		B475267D5C9685CD23A7C743 /* Pods-UnicodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnicodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7412B046D783E5F8454337B /* Pods-Unicode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unicode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Unicode/Pods-Unicode.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C4D5F780F4A5C7807EDDE9 /* Pods_BiLang_UnicodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLang_UnicodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD8643F1E166F060029E35B /* BiLang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD864421E166F060029E35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD864441E166F060029E35B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +127,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05CF542620A098000079756A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE9CF3177E58677D54664B9 /* Pods_Unicode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CF542F20A098000079756A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CF544C20A09D0F0079756A /* Pods_UnicodeTests.framework in Frameworks */,
+				05CF543320A098010079756A /* Unicode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFD8643C1E166F050029E35B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05CF542420A08E490079756A /* Pods_BiLang.framework in Frameworks */,
+				05CF544820A09AE70079756A /* Pods_BiLang.framework in Frameworks */,
+				05CF543F20A098010079756A /* Unicode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +172,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05CF542B20A098000079756A /* Unicode */ = {
+			isa = PBXGroup;
+			children = (
+				05CF542C20A098000079756A /* Unicode.h */,
+				05CF542D20A098000079756A /* Info.plist */,
+				05CF544920A09BFC0079756A /* String+Unicode.swift */,
+			);
+			path = Unicode;
+			sourceTree = "<group>";
+		};
+		05CF543820A098010079756A /* UnicodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				05CF543920A098010079756A /* UnicodeTests.swift */,
+				05CF543B20A098010079756A /* Info.plist */,
+			);
+			path = UnicodeTests;
+			sourceTree = "<group>";
+		};
 		333DA3C093865189ED2AB4BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +200,14 @@
 				5E05ED22E128C821F17E9C86 /* Pods-BiLangTests.release.xcconfig */,
 				5B473619B473F432C3145D44 /* Pods-BiLangUITests.debug.xcconfig */,
 				7FA662BAB7FA5CA7719D6537 /* Pods-BiLangUITests.release.xcconfig */,
+				D7412B046D783E5F8454337B /* Pods-Unicode.debug.xcconfig */,
+				475F9399A45C1F7049086415 /* Pods-Unicode.release.xcconfig */,
+				A85B5ED180BF26631482687B /* Pods-BiLang-Unicode.debug.xcconfig */,
+				8115D8028E6FC75149865709 /* Pods-BiLang-Unicode.release.xcconfig */,
+				02CC80F101152A0C3C215DB7 /* Pods-BiLang-UnicodeTests.debug.xcconfig */,
+				64716ECF47CB7ED6705C118A /* Pods-BiLang-UnicodeTests.release.xcconfig */,
+				1A7842EEF8FB3F347E774363 /* Pods-UnicodeTests.debug.xcconfig */,
+				B475267D5C9685CD23A7C743 /* Pods-UnicodeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,9 +215,15 @@
 		4F39FEECA4DCCC94C0747B33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05CF544B20A09D0F0079756A /* Pods_UnicodeTests.framework */,
+				05CF544720A09AE70079756A /* Pods_BiLang.framework */,
 				2751890DAF928594C9D8ED3A /* Pods_BiLang.framework */,
 				A4497FF0F7FEE62694F4517A /* Pods_BiLangTests.framework */,
 				1C37630F95C6F9FB06C68D0F /* Pods_BiLangUITests.framework */,
+				0D5248510B26062637747F51 /* Pods_Unicode.framework */,
+				58D3AB1DD89D121CE3A1BCE7 /* Pods_BiLang_Unicode.framework */,
+				F7C4D5F780F4A5C7807EDDE9 /* Pods_BiLang_UnicodeTests.framework */,
+				190581070BF590E1E769B14E /* Pods_UnicodeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +235,8 @@
 				FFD864411E166F060029E35B /* BiLang */,
 				FFD864561E166F060029E35B /* BiLangTests */,
 				FFD864611E166F060029E35B /* BiLangUITests */,
+				05CF542B20A098000079756A /* Unicode */,
+				05CF543820A098010079756A /* UnicodeTests */,
 				FFD864401E166F060029E35B /* Products */,
 				333DA3C093865189ED2AB4BE /* Pods */,
 				4F39FEECA4DCCC94C0747B33 /* Frameworks */,
@@ -145,6 +249,8 @@
 				FFD8643F1E166F060029E35B /* BiLang.app */,
 				FFD864531E166F060029E35B /* BiLangTests.xctest */,
 				FFD8645E1E166F060029E35B /* BiLangUITests.xctest */,
+				05CF542A20A098000079756A /* Unicode.framework */,
+				05CF543220A098000079756A /* UnicodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,7 +288,60 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		05CF542720A098000079756A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CF543C20A098010079756A /* Unicode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		05CF542920A098000079756A /* Unicode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CF544120A098010079756A /* Build configuration list for PBXNativeTarget "Unicode" */;
+			buildPhases = (
+				FAC8C17EBE5F724983A06E0C /* [CP] Check Pods Manifest.lock */,
+				05CF542520A098000079756A /* Sources */,
+				05CF542620A098000079756A /* Frameworks */,
+				05CF542720A098000079756A /* Headers */,
+				05CF542820A098000079756A /* Resources */,
+				72C1337B68D55B16B86CA99B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unicode;
+			productName = Unicode;
+			productReference = 05CF542A20A098000079756A /* Unicode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05CF543120A098000079756A /* UnicodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CF544420A098010079756A /* Build configuration list for PBXNativeTarget "UnicodeTests" */;
+			buildPhases = (
+				62206874641F00E34DE7B1E4 /* [CP] Check Pods Manifest.lock */,
+				05CF542E20A098000079756A /* Sources */,
+				05CF542F20A098000079756A /* Frameworks */,
+				05CF543020A098000079756A /* Resources */,
+				230089EA8979B70C5D405213 /* [CP] Embed Pods Frameworks */,
+				5F28E0C2208A5A576F0FEB5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05CF543520A098010079756A /* PBXTargetDependency */,
+				05CF543720A098010079756A /* PBXTargetDependency */,
+			);
+			name = UnicodeTests;
+			productName = UnicodeTests;
+			productReference = 05CF543220A098000079756A /* UnicodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FFD8643E1E166F050029E35B /* BiLang */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFD864671E166F060029E35B /* Build configuration list for PBXNativeTarget "BiLang" */;
@@ -198,6 +357,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				05CF543E20A098010079756A /* PBXTargetDependency */,
 			);
 			name = BiLang;
 			productName = BiLang;
@@ -252,10 +412,22 @@
 		FFD864371E166F050029E35B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "최광훈";
 				TargetAttributes = {
+					05CF542920A098000079756A = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = HY47J4787Q;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+					};
+					05CF543120A098000079756A = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = HY47J4787Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFD8643E1E166F050029E35B;
+					};
 					FFD8643E1E166F050029E35B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = HY47J4787Q;
@@ -277,7 +449,7 @@
 				};
 			};
 			buildConfigurationList = FFD8643A1E166F050029E35B /* Build configuration list for PBXProject "BiLang" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -292,11 +464,27 @@
 				FFD8643E1E166F050029E35B /* BiLang */,
 				FFD864521E166F060029E35B /* BiLangTests */,
 				FFD8645D1E166F060029E35B /* BiLangUITests */,
+				05CF542920A098000079756A /* Unicode */,
+				05CF543120A098000079756A /* UnicodeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05CF542820A098000079756A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CF543020A098000079756A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFD8643D1E166F050029E35B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +512,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		230089EA8979B70C5D405213 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D43B3AF5C139A1ED8D36AAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +592,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5F28E0C2208A5A576F0FEB5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62206874641F00E34DE7B1E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnicodeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		667641EC1E199E80DD7E6EB8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +638,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C1337B68D55B16B86CA99B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Unicode/Pods-Unicode-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD43A16B04552A8ED1B86AF1 /* [CP] Embed Pods Frameworks */ = {
@@ -438,14 +694,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BiLang/Pods-BiLang-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +720,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC8C17EBE5F724983A06E0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Unicode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE649F3E4792CD19AC3EF2B0 /* [CP] Check Pods Manifest.lock */ = {
@@ -489,6 +761,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05CF542520A098000079756A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CF544A20A09BFC0079756A /* String+Unicode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CF542E20A098000079756A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CF543A20A098010079756A /* UnicodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFD8643B1E166F050029E35B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,6 +805,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		05CF543520A098010079756A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05CF542920A098000079756A /* Unicode */;
+			targetProxy = 05CF543420A098010079756A /* PBXContainerItemProxy */;
+		};
+		05CF543720A098010079756A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD8643E1E166F050029E35B /* BiLang */;
+			targetProxy = 05CF543620A098010079756A /* PBXContainerItemProxy */;
+		};
+		05CF543E20A098010079756A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05CF542920A098000079756A /* Unicode */;
+			targetProxy = 05CF543D20A098010079756A /* PBXContainerItemProxy */;
+		};
 		FFD864551E166F060029E35B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FFD8643E1E166F050029E35B /* BiLang */;
@@ -549,6 +852,135 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		05CF544220A098010079756A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7412B046D783E5F8454337B /* Pods-Unicode.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Unicode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.Unicode;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05CF544320A098010079756A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475F9399A45C1F7049086415 /* Pods-Unicode.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Unicode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.Unicode;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05CF544520A098010079756A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7842EEF8FB3F347E774363 /* Pods-UnicodeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnicodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.UnicodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLang.app/BiLang";
+			};
+			name = Debug;
+		};
+		05CF544620A098010079756A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B475267D5C9685CD23A7C743 /* Pods-UnicodeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnicodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.UnicodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLang.app/BiLang";
+			};
+			name = Release;
+		};
 		FFD864651E166F060029E35B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -603,6 +1035,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,7 +1087,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -664,13 +1098,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E0081ACF2289CFBBF8C7557 /* Pods-BiLang.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HY47J4787Q;
 				INFOPLIST_FILE = BiLang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -683,13 +1121,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67C65085CBA4E5A03846FC7C /* Pods-BiLang.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HY47J4787Q;
 				INFOPLIST_FILE = BiLang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -707,7 +1149,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiLangTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -726,7 +1173,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiLangTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -744,7 +1196,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiLangUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -762,7 +1219,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiLangUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -775,6 +1237,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05CF544120A098010079756A /* Build configuration list for PBXNativeTarget "Unicode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05CF544220A098010079756A /* Debug */,
+				05CF544320A098010079756A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05CF544420A098010079756A /* Build configuration list for PBXNativeTarget "UnicodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05CF544520A098010079756A /* Debug */,
+				05CF544620A098010079756A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFD8643A1E166F050029E35B /* Build configuration list for PBXProject "BiLang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

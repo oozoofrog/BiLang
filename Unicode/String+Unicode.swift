@@ -34,16 +34,12 @@ extension String {
 	}
 }
 
-extension Array where Element == UInt8 {
+extension Array where Element: FixedWidthInteger {
 	public struct Unicode {
-		var array: [UInt8]
+		var array: [Element]
 		
 		var string: String? {
-			var utf8 = self.array.map { CChar(bitPattern: $0) }
-			if let last = utf8.last, last != 0 {
-				utf8.append(0)
-			}
-			return String(utf8String: &utf8)
+			return String.init(data: self.array.data, encoding: .utf8)
 		}
 	}
 	
@@ -54,13 +50,10 @@ extension Array where Element == UInt8 {
 
 extension FixedWidthInteger {
 	public var hex: String {
-		let hex = String(self, radix: 16, uppercase: true)
-		return hex
-	}
-}
-
-extension Collection where Element: FixedWidthInteger {
-	var hex: String {
-		return self.map { $0.hex }.joined(separator: " ")
+		let hex = String(self, radix: self.bitWidth, uppercase: true)
+		let characterCount = self.bitWidth / 8
+		let hexLength = hex.count / 2
+		let prefix = (0..<(characterCount - hexLength)).map { _ in "00" }.joined(separator: "")
+		return prefix + hex
 	}
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05821DCE20A499B300D27A9A /* FixedWidthInteger+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05821DCD20A499B300D27A9A /* FixedWidthInteger+Additions.swift */; };
 		05A0EF0B209E95C900C06A90 /* UnicodeUtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */; };
 		05CF543320A098010079756A /* Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF542A20A098000079756A /* Unicode.framework */; };
 		05CF543A20A098010079756A /* UnicodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF543920A098010079756A /* UnicodeTests.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		02CC80F101152A0C3C215DB7 /* Pods-BiLang-UnicodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-UnicodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-UnicodeTests/Pods-BiLang-UnicodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05821DCD20A499B300D27A9A /* FixedWidthInteger+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Additions.swift"; sourceTree = "<group>"; };
 		05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeUtilSpec.swift; sourceTree = "<group>"; };
 		05CF542A20A098000079756A /* Unicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Unicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CF542C20A098000079756A /* Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unicode.h; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				05CF542C20A098000079756A /* Unicode.h */,
 				05CF542D20A098000079756A /* Info.plist */,
+				05821DCD20A499B300D27A9A /* FixedWidthInteger+Additions.swift */,
 				05CF544920A09BFC0079756A /* String+Unicode.swift */,
 			);
 			path = Unicode;
@@ -766,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CF544A20A09BFC0079756A /* String+Unicode.swift in Sources */,
+				05821DCE20A499B300D27A9A /* FixedWidthInteger+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,17 +23,8 @@ class UnicodeTests: XCTestCase {
 	
 	func testUTF8Array() {
 		let a = "안녕"
-		let utf8array = a.unicode.codeunits.utf8
-		let b: [UInt8] = [236, 149, 136, 235, 133, 149]
-		let utf8string = b.unicode.string!
-		XCTAssertEqual(utf8array, b)
-		XCTAssertEqual(a, utf8string)
-	}
-	
-	func testUTF16() {
-		let a = "z水𝄞"
-		let array = a.unicode.codeunits.utf16
-		XCTAssertEqual(a, array.hex)
+		let array = a.unicode.codeunits.utf8
+		print(array.map { String.init($0, radix: 2, uppercase: true) })
 	}
 	
 }

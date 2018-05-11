@@ -50,10 +50,6 @@ extension Array where Element: FixedWidthInteger {
 
 extension FixedWidthInteger {
 	public var hex: String {
-		let hex = String(self, radix: self.bitWidth, uppercase: true)
-		let characterCount = self.bitWidth / 8
-		let hexLength = hex.count / 2
-		let prefix = (0..<(characterCount - hexLength)).map { _ in "00" }.joined(separator: "")
-		return prefix + hex
+		return String(self, radix: 16, uppercase: true)
 	}
 }

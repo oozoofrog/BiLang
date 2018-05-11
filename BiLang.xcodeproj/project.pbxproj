@@ -312,7 +312,6 @@
 				05CF542620A098000079756A /* Frameworks */,
 				05CF542720A098000079756A /* Headers */,
 				05CF542820A098000079756A /* Resources */,
-				72C1337B68D55B16B86CA99B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,7 +331,6 @@
 				05CF542F20A098000079756A /* Frameworks */,
 				05CF543020A098000079756A /* Resources */,
 				230089EA8979B70C5D405213 /* [CP] Embed Pods Frameworks */,
-				5F28E0C2208A5A576F0FEB5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,7 +353,6 @@
 				FFD8643D1E166F050029E35B /* Resources */,
 				FFD864811E1679610029E35B /* Embed Frameworks */,
 				DF36BA39F2488F26528A0A5E /* [CP] Embed Pods Frameworks */,
-				B08794832B197CB6CAAF9327 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,7 +373,6 @@
 				FFD864501E166F060029E35B /* Frameworks */,
 				FFD864511E166F060029E35B /* Resources */,
 				4623C760646BF046FB275D84 /* [CP] Embed Pods Frameworks */,
-				667641EC1E199E80DD7E6EB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,8 +392,6 @@
 				FFD8645A1E166F060029E35B /* Sources */,
 				FFD8645B1E166F060029E35B /* Frameworks */,
 				FFD8645C1E166F060029E35B /* Resources */,
-				AD43A16B04552A8ED1B86AF1 /* [CP] Embed Pods Frameworks */,
-				F18244DA2BC81B34F6F011F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -595,21 +589,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F28E0C2208A5A576F0FEB5F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		62206874641F00E34DE7B1E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -626,66 +605,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		667641EC1E199E80DD7E6EB8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72C1337B68D55B16B86CA99B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Unicode/Pods-Unicode-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD43A16B04552A8ED1B86AF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B08794832B197CB6CAAF9327 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLang/Pods-BiLang-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF36BA39F2488F26528A0A5E /* [CP] Embed Pods Frameworks */ = {
@@ -708,21 +627,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLang/Pods-BiLang-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F18244DA2BC81B34F6F011F7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAC8C17EBE5F724983A06E0C /* [CP] Check Pods Manifest.lock */ = {
@@ -933,7 +837,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A7842EEF8FB3F347E774363 /* Pods-UnicodeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -961,7 +864,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B475267D5C9685CD23A7C743 /* Pods-UnicodeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1102,7 +1004,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E0081ACF2289CFBBF8C7557 /* Pods-BiLang.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1125,7 +1026,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67C65085CBA4E5A03846FC7C /* Pods-BiLang.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

@@ -22,9 +22,11 @@ class UnicodeTests: XCTestCase {
 	}
 	
 	func testUTF8Array() {
-		let a = "안녕"
+		let a = "a👠안녕"
 		let array = a.unicode.codeunits.utf8
-		print(array.map { String.init($0, radix: 2, uppercase: true) })
+		print(array.map { $0.hex })
+		print(a.data(using: .utf16)!.map { $0 })
+		print([255, 254] + a.unicode.codeunits.utf16.bytes)
 	}
 	
 }

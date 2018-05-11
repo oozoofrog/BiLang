@@ -43,7 +43,7 @@ public struct StringConverter {
 		case .utf8:
 			return String(data: data ?? Data(), encoding: .utf8)
 		case .bits:
-			return data?.map { String.init($0, radix: 2, uppercase: true) }.map { $0.count % 2 == 1 ? "0\($0)" : $0 }.joined()
+			return data?.map { String.init($0, radix: 2, uppercase: true) }.map { String.init(repeating: "0", count: 8 - $0.count) }.joined()
 		}
 	}
 }

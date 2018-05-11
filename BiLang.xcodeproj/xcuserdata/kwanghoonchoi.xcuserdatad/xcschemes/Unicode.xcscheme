@@ -29,7 +29,26 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "05CF543120A098000079756A"
+               BuildableName = "UnicodeTests.xctest"
+               BlueprintName = "UnicodeTests"
+               ReferencedContainer = "container:BiLang.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "05CF542920A098000079756A"
+            BuildableName = "Unicode.framework"
+            BlueprintName = "Unicode"
+            ReferencedContainer = "container:BiLang.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05524CE620A5DE0600D4EB9C /* StringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05524CE520A5DE0600D4EB9C /* StringConverter.swift */; };
+		05524CE720A5E5DD00D4EB9C /* StringConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05524CE320A5DB9D00D4EB9C /* StringConverterSpec.swift */; };
 		05821DCE20A499B300D27A9A /* FixedWidthInteger+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05821DCD20A499B300D27A9A /* FixedWidthInteger+Additions.swift */; };
 		05A0EF0B209E95C900C06A90 /* UnicodeUtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */; };
 		05CF543320A098010079756A /* Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF542A20A098000079756A /* Unicode.framework */; };
@@ -82,6 +84,8 @@
 
 /* Begin PBXFileReference section */
 		02CC80F101152A0C3C215DB7 /* Pods-BiLang-UnicodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-UnicodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-UnicodeTests/Pods-BiLang-UnicodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05524CE320A5DB9D00D4EB9C /* StringConverterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverterSpec.swift; sourceTree = "<group>"; };
+		05524CE520A5DE0600D4EB9C /* StringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverter.swift; sourceTree = "<group>"; };
 		05821DCD20A499B300D27A9A /* FixedWidthInteger+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Additions.swift"; sourceTree = "<group>"; };
 		05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeUtilSpec.swift; sourceTree = "<group>"; };
 		05CF542A20A098000079756A /* Unicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Unicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +267,7 @@
 			children = (
 				FFD864421E166F060029E35B /* AppDelegate.swift */,
 				FFD864441E166F060029E35B /* ViewController.swift */,
+				05524CE520A5DE0600D4EB9C /* StringConverter.swift */,
 				FFD864461E166F060029E35B /* Main.storyboard */,
 				FFD864491E166F060029E35B /* Assets.xcassets */,
 				FFD8644B1E166F060029E35B /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 			children = (
 				FFD864571E166F060029E35B /* BiLangTests.swift */,
 				05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */,
+				05524CE320A5DB9D00D4EB9C /* StringConverterSpec.swift */,
 				FFD864591E166F060029E35B /* Info.plist */,
 			);
 			path = BiLangTests;
@@ -516,13 +522,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnicodeTests/Pods-UnicodeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -691,6 +701,7 @@
 			files = (
 				FFD864451E166F060029E35B /* ViewController.swift in Sources */,
 				FFD864431E166F060029E35B /* AppDelegate.swift in Sources */,
+				05524CE620A5DE0600D4EB9C /* StringConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +710,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A0EF0B209E95C900C06A90 /* UnicodeUtilSpec.swift in Sources */,
+				05524CE720A5E5DD00D4EB9C /* StringConverterSpec.swift in Sources */,
 				FFD864581E166F060029E35B /* BiLangTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1017,7 +1029,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1039,7 +1050,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngenii.BiLang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1062,7 +1072,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLang.app/BiLang";
 			};
@@ -1086,7 +1095,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.woowahan.BiLangTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLang.app/BiLang";
 			};

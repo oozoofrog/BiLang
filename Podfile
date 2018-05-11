@@ -29,6 +29,7 @@ target 'BiLang' do
 		
 		target 'UnicodeTests' do
 				inherit! :search_paths
+				pod 'RxTest'
 				pod 'Quick'
 				pod 'Nimble'
 		end

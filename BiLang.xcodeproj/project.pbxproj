@@ -19,6 +19,7 @@
 		05CF544820A09AE70079756A /* Pods_BiLang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF544720A09AE70079756A /* Pods_BiLang.framework */; };
 		05CF544A20A09BFC0079756A /* String+Unicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF544920A09BFC0079756A /* String+Unicode.swift */; };
 		05CF544C20A09D0F0079756A /* Pods_UnicodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CF544B20A09D0F0079756A /* Pods_UnicodeTests.framework */; };
+		69EA1DE220A9D9CD002F64D8 /* ConvertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EA1DE120A9D9CD002F64D8 /* ConvertViewModel.swift */; };
 		6FE9CF3177E58677D54664B9 /* Pods_Unicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5248510B26062637747F51 /* Pods_Unicode.framework */; };
 		9AA9B92F075E98ABDE6FB9AC /* Pods_BiLangTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4497FF0F7FEE62694F4517A /* Pods_BiLangTests.framework */; };
 		B25B815F42CA0053EF016BD4 /* Pods_BiLangUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C37630F95C6F9FB06C68D0F /* Pods_BiLangUITests.framework */; };
@@ -110,6 +111,7 @@
 		5E05ED22E128C821F17E9C86 /* Pods-BiLangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangTests/Pods-BiLangTests.release.xcconfig"; sourceTree = "<group>"; };
 		64716ECF47CB7ED6705C118A /* Pods-BiLang-UnicodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-UnicodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-UnicodeTests/Pods-BiLang-UnicodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		67C65085CBA4E5A03846FC7C /* Pods-BiLang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang/Pods-BiLang.release.xcconfig"; sourceTree = "<group>"; };
+		69EA1DE120A9D9CD002F64D8 /* ConvertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewModel.swift; sourceTree = "<group>"; };
 		7FA662BAB7FA5CA7719D6537 /* Pods-BiLangUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLangUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLangUITests/Pods-BiLangUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8115D8028E6FC75149865709 /* Pods-BiLang-Unicode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLang-Unicode.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiLang-Unicode/Pods-BiLang-Unicode.release.xcconfig"; sourceTree = "<group>"; };
 		A4497FF0F7FEE62694F4517A /* Pods_BiLangTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLangTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +284,7 @@
 				FFD864571E166F060029E35B /* BiLangTests.swift */,
 				05A0EF0A209E95C900C06A90 /* UnicodeUtilSpec.swift */,
 				05524CE320A5DB9D00D4EB9C /* StringConverterSpec.swift */,
+				69EA1DE120A9D9CD002F64D8 /* ConvertViewModel.swift */,
 				FFD864591E166F060029E35B /* Info.plist */,
 			);
 			path = BiLangTests;
@@ -711,6 +714,7 @@
 			files = (
 				05A0EF0B209E95C900C06A90 /* UnicodeUtilSpec.swift in Sources */,
 				05524CE720A5E5DD00D4EB9C /* StringConverterSpec.swift in Sources */,
+				69EA1DE220A9D9CD002F64D8 /* ConvertViewModel.swift in Sources */,
 				FFD864581E166F060029E35B /* BiLangTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

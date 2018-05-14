@@ -8,6 +8,10 @@
 
 import Foundation
 
+extension String.Encoding {
+	
+}
+
 public struct StringConverter {
 	
 	public enum StringType {
